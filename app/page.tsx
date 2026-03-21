@@ -17,7 +17,7 @@ export default function Home() {
 
       {/* Main Content Card */}
       <main className="relative z-10 w-full max-w-2xl px-6 py-12">
-        <div className="backdrop-blur-xl bg-white/5 border border-white/10 p-12 rounded-3xl shadow-2xl space-y-10 text-center animate-in fade-in zoom-in duration-1000">
+        <div className="backdrop-blur-xl bg-white/5 border border-white/10 p-12 rounded-3xl shadow-2xl space-y-10 text-center animate-zoom-in">
           
           {/* Brand/Logo */}
           <div className="space-y-2">
@@ -74,20 +74,6 @@ export default function Home() {
         <div className="absolute -top-24 -left-24 w-96 h-96 bg-blue-600/20 rounded-full blur-[120px] -z-10 animate-pulse"></div>
         <div className="absolute -bottom-24 -right-24 w-96 h-96 bg-cyan-600/10 rounded-full blur-[120px] -z-10 animate-pulse"></div>
       </main>
-
-      <style jsx global>{`
-        @keyframes fade-in {
-          from { opacity: 0; }
-          to { opacity: 1; }
-        }
-        @keyframes zoom-in {
-          from { transform: scale(0.95); }
-          to { transform: scale(1); }
-        }
-        .animate-in {
-          animation: fade-in 1s ease-out, zoom-in 1s ease-out;
-        }
-      `}</style>
     </div>
   );
 }
