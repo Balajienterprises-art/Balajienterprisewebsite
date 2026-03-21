@@ -71,7 +71,7 @@ const whyUs = [
 /* ── PAGE ───────────────────────────────────────── */
 export default function Home() {
   return (
-    <div className="min-h-screen bg-white text-text-main font-sans selection:bg-brand-primary selection:text-white">
+    <div className="min-h-screen bg-white text-text-main font-sans selection:bg-brand-primary selection:text-white overflow-x-hidden w-full max-w-[100vw]">
 
       {/* ══ NAVBAR ══ */}
       <header className="sticky top-0 z-50 bg-[#0F3D81] border-b border-white/5 backdrop-blur-md">

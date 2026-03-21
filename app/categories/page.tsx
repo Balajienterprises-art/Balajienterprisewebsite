@@ -16,7 +16,7 @@ const fadeUp = {
 
 const CategoriesPage = () => {
   return (
-    <div className="min-h-screen bg-white text-text-main font-sans pb-32">
+    <div className="min-h-screen bg-white text-text-main font-sans pb-32 overflow-x-hidden w-full max-w-[100vw]">
       
       {/* ══ Header Section (Industrial Dark) ══ */}
       <section className="bg-brand-primary text-white py-32 px-6 relative overflow-hidden">

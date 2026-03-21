@@ -33,7 +33,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${inter.variable} ${arvo.variable} ${geistMono.variable}`}>
-      <body>{children}</body>
+      <body className="w-full overflow-x-hidden">
+        <div className="w-full overflow-x-hidden relative flex flex-col min-h-screen">
+          {children}
+        </div>
+      </body>
     </html>
   );
 }

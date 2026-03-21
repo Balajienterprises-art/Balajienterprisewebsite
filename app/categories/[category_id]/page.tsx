@@ -31,7 +31,7 @@ export default function CategoryDetailPage({ params }: { params: { category_id: 
   }
 
   return (
-    <div className="min-h-screen bg-white font-sans selection:bg-brand-primary selection:text-white pb-32">
+    <div className="min-h-screen bg-white font-sans selection:bg-brand-primary selection:text-white pb-32 overflow-x-hidden w-full max-w-[100vw]">
       
       {/* ══ Global Header (Spec Sheet Style) ══ */}
       <div className="bg-brand-primary border-b border-white/5 relative py-20 px-6 lg:px-20 overflow-hidden">
