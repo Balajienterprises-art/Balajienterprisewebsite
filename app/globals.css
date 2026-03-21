@@ -9,9 +9,12 @@
   --color-bg-alt: #F8FAFC;
   --color-text-main: #1E293B;
   --color-text-muted: #64748B;
-  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-heading: var(--font-arvo), serif;
   --font-mono: var(--font-geist-mono), ui-monospace, monospace;
 }
+
+@utility font-heading { font-family: var(--font-heading); }
 
 *, *::before, *::after {
   box-sizing: border-box;
@@ -19,6 +22,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -29,4 +33,14 @@ body {
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+@keyframes scan {
+  from { transform: translateY(-100%); }
+  to { transform: translateY(200%); }
+}
+
+@utility animate-scan {
+  animation: scan 2s linear infinite;
 }
