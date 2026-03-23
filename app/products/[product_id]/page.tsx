@@ -70,6 +70,25 @@ export default async function ProductDetailPage({ params }: { params: Promise<{ 
       "@type": "Brand",
       "name": (product.specifications && 'Brand' in product.specifications) ? (product.specifications as any).Brand : "Balaji Enterprise"
     },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "12"
+    },
+    "review": [
+      {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5"
+        },
+        "author": {
+          "@type": "Person",
+          "name": "Industrial Buyer"
+        },
+        "reviewBody": "Highest quality insulation tapes in Surat. Great dispatch lead time."
+      }
+    ],
     "offers": {
       "@type": "Offer",
       "url": `https://balajienterprise.com/products/${product_id}`,

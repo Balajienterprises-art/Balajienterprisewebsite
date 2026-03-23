@@ -27,10 +27,48 @@ export async function generateMetadata(
   }
 }
 
-export default function CategoryLayout({
+export default async function CategoryLayout({
   children,
+  params,
 }: {
   children: React.ReactNode
+  params: Promise<{ category_id: string }>
 }) {
-  return <>{children}</>
+  const { category_id } = await params;
+  const category = categories.find((c) => c.id === category_id);
+
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://balajienterprise.com"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Catalog",
+        "item": "https://balajienterprise.com/categories"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": category?.name || "Category",
+        "item": `https://balajienterprise.com/categories/${category_id}`
+      }
+    ]
+  };
+
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
+      {children}
+    </>
+  );
 }

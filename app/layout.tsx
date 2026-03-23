@@ -57,6 +57,13 @@ export const metadata: Metadata = {
     title: "Balaji Enterprise | Industrial Electrical Supplier Surat",
     description: "Quality sourcing for industrial electrical components. Based in Surat, Gujarat.",
   },
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/apple-icon.png",
+  },
+  themeColor: "#0F3D81",
+
   robots: {
     index: true,
     follow: true,
@@ -69,7 +76,7 @@ export const metadata: Metadata = {
     },
   },
   verification: {
-    google: "your-google-verification-code", // User should replace this
+    google: "5wNlo0lEIEujLJM2GZuTLa8VfUKmfNiwHiHB3Gk6YHY",
   },
 };
 
