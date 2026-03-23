@@ -19,12 +19,21 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Balaji Enterprise | Electrical & Electronics Supplier — Surat, Gujarat",
+  title: "Balaji Enterprise | #1 Industrial Electrical Supplier — Surat, Gujarat",
   description:
-    "Balaji Enterprise supplies PVC Insulation Tape, HT Rubber Tape, Bare Copper Wire, Super Enameled Wire, Brass Hardware and more. Based in Kamrej, Surat — serving businesses across Gujarat.",
+    "Leading industrial electrical distributor in Kamrej, Surat. We supply premium PVC Tapes, HT Rubber Tapes, Bare Copper Wire, and Brass Hardware. Quality assured for Gujarat's top electrical projects and winding industries.",
   keywords:
-    "electrical supplier Surat, PVC insulation tape, HT rubber EPR tape, bare copper wire, enameled wire, brass nut bolt, electronics trader Gujarat",
+    "electrical supplier Surat, Kamrej electrical distributor, PVC insulation tape Surat, copper wire supplier Gujarat, brass hardware Surat, industrial procurement Surat, electrical winding material Gujarat, high tension rubber tape Surat",
+  openGraph: {
+    title: "Balaji Enterprise | Surat's Trusted Industrial Supplier",
+    description: "Quality sourcing for industrial electrical components. Based in Surat, Gujarat.",
+    type: "website",
+  },
 };
+
+import { Navbar } from "./components/Navbar";
+import { Footer } from "./components/Footer";
+import { MobileDock } from "./components/MobileDock";
 
 export default function RootLayout({
   children,
@@ -32,11 +41,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${arvo.variable} ${geistMono.variable}`}>
-      <body className="w-full overflow-x-hidden">
-        <div className="w-full overflow-x-hidden relative flex flex-col min-h-screen">
+    <html lang="en" className={`${inter.variable} ${arvo.variable} ${geistMono.variable}`} suppressHydrationWarning data-scroll-behavior="smooth">
+      <body className="w-full overflow-x-hidden min-h-screen flex flex-col">
+        <Navbar />
+        <main className="flex-grow w-full">
           {children}
-        </div>
+        </main>
+        <Footer />
+        <MobileDock />
       </body>
     </html>
   );

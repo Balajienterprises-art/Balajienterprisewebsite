@@ -103,7 +103,7 @@ const CategoriesPage = () => {
             <div className="absolute top-0 left-0 w-2 h-full bg-accent-brass" />
             <div className="space-y-2 relative z-10">
                <h2 className="text-white font-heading font-bold text-3xl uppercase italic tracking-tighter">Custom Sourcing?</h2>
-               <p className="text-blue-200/60 font-mono text-[10px] uppercase tracking-widest leading-relaxed">If it's not in the grid, we'll find the spec.</p>
+               <p className="text-blue-200/60 font-mono text-[10px] uppercase tracking-widest leading-relaxed">If it&apos;s not in the grid, we&apos;ll find the spec.</p>
             </div>
             <a
                href="https://wa.me/917698787886?text=Hello Balaji Enterprise, I am an electrician looking for a custom specific requirement."

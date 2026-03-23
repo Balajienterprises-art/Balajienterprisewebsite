@@ -1,21 +1,15 @@
 "use client";
 
-import React from "react";
+import React, { use } from "react";
 import Link from "next/link";
-import { notFound } from "next/navigation";
 import { categories } from "../../data/data";
-import { FaChevronRight, FaWhatsapp, FaArrowRight } from "react-icons/fa";
+import { FaWhatsapp, FaArrowRight } from "react-icons/fa";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
-const fadeUp = {
-  initial: { opacity: 0, y: 20 },
-  whileInView: { opacity: 1, y: 0 },
-  transition: { duration: 0.5, ease: "easeOut" as const },
-};
 
-export default function CategoryDetailPage({ params }: { params: { category_id: string } }) {
-  const { category_id } = params;
+export default function CategoryDetailPage({ params }: { params: Promise<{ category_id: string }> }) {
+  const { category_id } = use(params);
   const category = categories.find((c) => c.id === category_id);
 
   if (!category) {
@@ -93,7 +87,7 @@ export default function CategoryDetailPage({ params }: { params: { category_id: 
 
             <div className="bg-bg-alt p-8 relative border-l-4 border-brand-primary">
                <span className="font-mono text-[10px] font-bold text-brand-secondary block mb-3 opacity-50 uppercase">Technical Desk</span>
-               <p className="text-xs text-text-muted leading-relaxed font-bold uppercase tracking-wider mb-6">Need a specific gauge or material that isn't listed?</p>
+               <p className="text-xs text-text-muted leading-relaxed font-bold uppercase tracking-wider mb-6">Need a specific gauge or material that isn&apos;t listed?</p>
                <a href="https://wa.me/917698787886" className="inline-flex items-center gap-2 text-brand-primary text-xs font-heading font-bold uppercase italic hover:text-brand-secondary transition-colors">
                   Contact Dispatch <FaArrowRight className="w-3 h-3" />
                </a>
@@ -124,7 +118,7 @@ export default function CategoryDetailPage({ params }: { params: { category_id: 
                 </span>
 
                 {/* Image Container */}
-                <div className="relative aspect-[4/3] bg-slate-50 overflow-hidden mb-10 border border-slate-100">
+                <Link href={`/products/${product.id}`} className="block relative aspect-[4/3] bg-slate-50 overflow-hidden mb-10 border border-slate-100">
                   <Image
                     src={product.image}
                     alt={product.name}
@@ -137,13 +131,15 @@ export default function CategoryDetailPage({ params }: { params: { category_id: 
                      <div className="w-full h-[2px] bg-accent-brass/50 shadow-[0_0_15px_#EAB308] animate-scan" />
                   </div>
                   <div className="absolute inset-0 bg-brand-primary/0 group-hover:bg-brand-primary/20 transition-all" />
-                </div>
+                </Link>
 
                 {/* Content (Spec style) */}
                 <div className="flex-1 flex flex-col gap-6">
-                  <h3 className="font-heading font-bold text-brand-primary text-2xl uppercase italic tracking-tighter leading-none group-hover:text-brand-secondary transition-colors">
-                    {product.name}
-                  </h3>
+                  <Link href={`/products/${product.id}`} className="block">
+                    <h3 className="font-heading font-bold text-brand-primary text-2xl uppercase italic tracking-tighter leading-none group-hover:text-brand-secondary transition-colors">
+                      {product.name}
+                    </h3>
+                  </Link>
                   
                   <div className="mt-auto pt-8 border-t border-slate-100 flex items-center justify-between gap-4">
                     <span className="font-mono text-xs font-bold text-brand-primary bg-bg-alt px-4 py-2 border border-brand-primary/10">
