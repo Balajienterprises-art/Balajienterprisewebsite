@@ -26,7 +26,14 @@ export function Footer() {
                <h4 className="text-white font-heading font-bold uppercase tracking-widest text-[10px] md:text-xs italic">{col.title}</h4>
                <ul className="space-y-3 md:space-y-4 font-mono text-[9px] md:text-[11px] uppercase tracking-wider">
                   {col.items.map(item => (
-                    <li key={item}><Link href="/categories" className="hover:text-accent-brass transition-colors">[{item.toUpperCase()}]</Link></li>
+                    <li key={item}>
+                      <Link 
+                        href="/categories" 
+                        className={`hover:text-accent-brass transition-colors ${item === 'Surat' ? 'text-white font-black border-b border-accent-brass/50' : ''}`}
+                      >
+                        [{item.toUpperCase()}]
+                      </Link>
+                    </li>
                   ))}
                </ul>
             </div>

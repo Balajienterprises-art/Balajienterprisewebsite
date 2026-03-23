@@ -25,6 +25,9 @@ export async function generateMetadata({ params }: { params: Promise<{ product_i
     title: `Buy ${product.name} in Surat | Best Price & Specs | Balaji Enterprise`,
     description: `Original industrial ${product.name} available at Balaji Enterprise, Kamrej, Surat. Check detailed specifications, pricing, and project-ready inventory for all your electrical requirements in Gujarat.`,
     keywords: `${product.name} Surat, ${product.name} supplier Gujarat, electrical supplies Surat, industrial ${product.name} price`,
+    alternates: {
+      canonical: `/products/${product_id}`,
+    },
   };
 }
 
@@ -56,8 +59,71 @@ export default async function ProductDetailPage({ params }: { params: Promise<{ 
     );
   }
 
+  const productJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": product.name,
+    "image": `https://balajienterprise.com${product.image}`,
+    "description": product.description || `Original industrial ${product.name} available at Balaji Enterprise, Kamrej, Surat.`,
+    "sku": product.id,
+    "brand": {
+      "@type": "Brand",
+      "name": (product.specifications && 'Brand' in product.specifications) ? (product.specifications as any).Brand : "Balaji Enterprise"
+    },
+    "offers": {
+      "@type": "Offer",
+      "url": `https://balajienterprise.com/products/${product_id}`,
+      "priceCurrency": "INR",
+      "price": "0", // Contact for price
+      "availability": "https://schema.org/InStock",
+      "seller": {
+        "@type": "Organization",
+        "name": "Balaji Enterprise"
+      }
+    }
+  };
+
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://balajienterprise.com"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Catalog",
+        "item": "https://balajienterprise.com/categories"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": parentCategory.name,
+        "item": `https://balajienterprise.com/categories/${parentCategory.id}`
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "name": product.name,
+        "item": `https://balajienterprise.com/products/${product.id}`
+      }
+    ]
+  };
+
   return (
     <div className="min-h-screen bg-white font-sans selection:bg-brand-primary selection:text-white pb-32 overflow-x-hidden w-full max-w-[100vw]">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(productJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
       
       {/* ══ HEADER / BREADCRUMB ══ */}
       <div className="bg-brand-primary relative py-8 md:py-12 px-6 lg:px-20 border-b border-white/5">

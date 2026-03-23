@@ -63,9 +63,51 @@ const whyUs = [
 
 /* ── PAGE ───────────────────────────────────────── */
 export default function Home() {
+  const faqJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Where is Balaji Enterprise located in Surat?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Balaji Enterprise is located at Plot 185, Swarna Bhumi Soc., Kamrej, Surat, Gujarat — 394180. We are primary suppliers for the industrial electrical winding and panel industries in the region."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you supply Steelgrip PVC tape and HT rubber tapes?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, we specialize in high-quality insulation tapes including Steelgrip+ PVC tape, HT Rubber (EPR) tape, and self-amalgamating tapes for industrial use."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What gauges of bare copper wire do you stock?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We maintain a ready stock of bare copper wire in common industrial gauges such as 8 SWG, 10 SWG, 12 SWG, and 14 SWG, along with super enameled copper wire."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I get a technical quote for electrical supplies on WhatsApp?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Absolutely! You can message our dispatch desk at +91 76987 87886 for immediate technical quotes, lead times, and bulk pricing."
+        }
+      }
+    ]
+  };
+
   return (
     <div className="min-h-screen bg-white text-text-main font-sans selection:bg-brand-primary selection:text-white overflow-x-hidden w-full max-w-[100vw]">
-
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
       {/* ══ HERO ══ */}
       <section className="relative min-h-[70vh] md:min-h-[85vh] flex flex-col items-center pt-24 md:pt-32 pb-24 px-6 text-center overflow-hidden bg-brand-primary">
         {/* Background Image & Overlay */}
@@ -92,6 +134,17 @@ export default function Home() {
             Welcome To
           </motion.p>
           
+          <div className="flex justify-center mb-2">
+            <motion.div 
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              className="inline-flex items-center gap-2 bg-accent-brass/20 backdrop-blur-md border border-accent-brass/30 px-4 py-1.5 rounded-full"
+            >
+              <span className="w-1.5 h-1.5 bg-accent-brass rounded-full animate-pulse" />
+              <span className="font-mono text-[8px] md:text-[9px] text-accent-brass font-black uppercase tracking-widest">Surat, Gujarat Center of Excellence</span>
+            </motion.div>
+          </div>
+
           <motion.h1 
             {...fadeUp}
             className="text-white font-heading font-black text-4xl sm:text-6xl md:text-8xl leading-[0.9] tracking-tighter uppercase italic"
@@ -99,6 +152,7 @@ export default function Home() {
             Balaji <br className="hidden md:block" />
             <span className="text-accent-brass">Enterprise</span>
           </motion.h1>
+
           
           <motion.p 
             {...fadeUp}
@@ -257,6 +311,9 @@ export default function Home() {
           >
             <div className="space-y-4">
                <span className="font-mono text-[10px] md:text-xs uppercase tracking-[0.4em] text-accent-brass font-bold">The Firm / 03</span>
+               <div className="inline-flex items-center gap-2 bg-white/10 px-3 py-1 border-l-2 border-accent-brass mb-2">
+                 <span className="font-mono text-[9px] text-accent-brass font-bold uppercase tracking-widest">Top Priority</span>
+               </div>
                <h2 className="text-3xl sm:text-4xl md:text-7xl font-heading font-bold uppercase italic leading-[1.1] md:leading-[0.9] tracking-tighter">
                  Surat's Strategic <br/> Supply Partner.
                </h2>
@@ -292,6 +349,54 @@ export default function Home() {
                 <span className="font-heading font-bold text-sm md:text-lg leading-tight block italic">Verified Supply Chain</span>
              </div>
           </motion.div>
+        </div>
+      </section>
+
+      {/* ══ FAQ SECTION (Search Optimizer) ══ */}
+      <section className="py-16 md:py-32 px-6 lg:px-20 bg-bg-alt relative overflow-hidden">
+        <div className="max-w-4xl mx-auto">
+          <motion.div {...fadeUp} className="mb-12 md:mb-20 text-center">
+             <span className="font-mono text-[10px] md:text-xs uppercase tracking-[0.3em] text-brand-secondary font-bold">Inquiry Desk / 05</span>
+             <h2 className="text-3xl md:text-6xl font-heading font-bold text-brand-primary mt-4 tracking-tighter uppercase italic">Frequently Asked</h2>
+             <div className="w-20 h-2 bg-accent-brass mt-6 mx-auto" />
+          </motion.div>
+
+          <div className="space-y-4">
+            {[
+              {
+                q: "Where is Balaji Enterprise located in Surat?",
+                a: "Our headquarters and dispatch center are located at Plot 185, Swarna Bhumi Soc., Kamrej, Surat — 394180. We serve the entire Gujarat industrial belt with rapid logistics."
+              },
+              {
+                q: "What brands of insulation tapes do you supply?",
+                a: "We are primary distributors for Steelgrip+ PVC Tapes. We also stock professional-grade HT Rubber (EPR) splicing tapes and self-amalgamating tapes for high-voltage applications."
+              },
+              {
+                q: "Do you maintain ready stock for bare copper wire?",
+                a: "Yes, we maintain extensive inventory of bare copper wire in 8, 10, 12, and 14 SWG gauges, ensuring immediate dispatch for project-critical winding and grounding requirements."
+              },
+              {
+                q: "How can I request a technical bulk quote?",
+                a: "The fastest way to get a technical quote is via our WhatsApp Dispatch Desk at +91 76987 87886. Simply send your required gauge and quantity for an immediate estimate."
+              }
+            ].map((faq, idx) => (
+              <motion.div 
+                key={idx}
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ delay: idx * 0.1 }}
+                className="bg-white border border-slate-100 p-6 md:p-8 group hover:border-brand-secondary transition-all"
+              >
+                <h3 className="font-heading font-bold text-lg md:text-xl text-brand-primary uppercase italic mb-4 flex items-center gap-4">
+                   <span className="text-accent-brass font-mono text-sm group-hover:rotate-90 transition-transform">0{idx+1}.</span>
+                   {faq.q}
+                </h3>
+                <p className="text-sm md:text-base text-text-muted leading-relaxed font-sans border-l-2 border-slate-100 pl-6 group-hover:border-brand-secondary transition-colors italic">
+                  {faq.a}
+                </p>
+              </motion.div>
+            ))}
+          </div>
         </div>
       </section>
 
