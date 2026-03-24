@@ -9,64 +9,31 @@ export const categories = [
         id: "pvc-steelgrip", 
         name: "Steelgrip+ PVC Insulation Tape (Single Roll)", 
         price: "Ask for Price", 
-        image: "/products/steelgrip-pvc-tape-rolls.png",
+        images: [
+          "/products/steelgrip-pvc-tape-rolls.png",
+          "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=800&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800&auto=format&fit=crop"
+        ],
         description: "Industrial-grade flame-retardant PVC tape by Steelgrip+. Designed for primary electrical insulation of wire and cable splices, and color-coding applications.",
-        features: ["Self Adhesive", "Flame Retardant", "Better Grip", "Strong Adhesion", "Fire Retardant", "UV & Moisture Resistant"],
-        specifications: { "Material": "Polyvinyl Chloride (PVC)", "Width": "1.70 cm", "Length": "6 m", "Thickness": "0.125 mm", "Voltage Rating": "Up to 600V", "Operating Temp": "-10°C to 80°C", "Brand": "Steelgrip+" }
-      },
-      { 
-        id: "pvc-1", 
-        name: "Red PVC Insulation Tape (Steelgrip+)", 
-        price: "Ask for Price", 
-        image: "/products/steelgrip-pvc-tape-rolls.png",
-        description: "Steelgrip+ Red PVC tape for phase identification and electrical insulation. Flame-retardant and highly conformable.",
-        features: ["Flame Retardant", "High Adhesion Strength", "UV Resistant", "Lead-Free"],
-        specifications: { "Material": "PVC", "Width": "1.70 cm", "Length": "6 m", "Thickness": "0.125 mm", "Voltage": "Up to 600V", "Color": "Red" }
-      },
-      { 
-        id: "pvc-2", 
-        name: "Yellow PVC Insulation Tape (Steelgrip+)", 
-        price: "Ask for Price", 
-        image: "/products/steelgrip-pvc-tape-rolls.png",
-        description: "Steelgrip+ Yellow PVC tape for color-coding and reliable insulation in electrical panels and general wiring.",
-        features: ["Flame Retardant", "High Adhesion Strength", "UV Resistant", "Lead-Free"],
-        specifications: { "Material": "PVC", "Width": "1.70 cm", "Length": "6 m", "Thickness": "0.125 mm", "Voltage": "Up to 600V", "Color": "Yellow" }
-      },
-      { 
-        id: "pvc-3", 
-        name: "Blue PVC Insulation Tape (Steelgrip+)", 
-        price: "Ask for Price", 
-        image: "/products/steelgrip-pvc-tape-rolls.png",
-        description: "Steelgrip+ Blue PVC tape designed for secure electrical insulation and phase identification.",
-        features: ["Flame Retardant", "High Adhesion Strength", "UV Resistant", "Lead-Free"],
-        specifications: { "Material": "PVC", "Width": "1.70 cm", "Length": "6 m", "Thickness": "0.125 mm", "Voltage": "Up to 600V", "Color": "Blue" }
-      },
-      { 
-        id: "pvc-4", 
-        name: "Black PVC Insulation Tape (Steelgrip+)", 
-        price: "Ask for Price", 
-        image: "/products/steelgrip-pvc-tape-rolls.png",
-        description: "Versatile Steelgrip+ Black PVC tape for primary insulation and basic wiring repairs. Weather-proof and durable.",
-        features: ["Flame Retardant", "Maximum Hold", "UV Resistant", "Weather-Proof"],
-        specifications: { "Material": "PVC", "Width": "1.70 cm", "Length": "6 m", "Thickness": "0.125 mm", "Voltage": "Up to 600V", "Color": "Black" }
-      },
-      { 
-        id: "pvc-5", 
-        name: "Green PVC Insulation Tape (Steelgrip+)", 
-        price: "Ask for Price", 
-        image: "/products/steelgrip-pvc-tape-rolls.png",
-        description: "Steelgrip+ Green PVC tape specialized for grounding and earth wire identification.",
-        features: ["Flame Retardant", "High Adhesion Strength", "UV Resistant", "Moisture Resistant"],
-        specifications: { "Material": "PVC", "Width": "1.70 cm", "Length": "6 m", "Thickness": "0.125 mm", "Voltage": "Up to 600V", "Color": "Green" }
+        detailedDescription: "Steelgrip+ PVC Insulation Tape is a premium-grade electrical tape made from high-quality polyvinyl chloride (PVC) with a pressure-sensitive rubber adhesive. Conforming to BIS IS 7809 standards, it offers superior dielectric strength of up to 6kV, making it the trusted choice for professional electricians across Gujarat. Its self-extinguishing properties ensure maximum safety in panel wiring and household installations.",
+        features: ["Self-Extinguishing (FR)", "High Dielectric Strength (6kV)", "Strong Adhesion (2.5N/10mm)", "Elasticity (125% Elongation)", "ISI Marked (IS 7809)", "Moisture & UV Resistant"],
+        specifications: { "Material": "Premium PVC + Rubber Adhesive", "Width": "1.70 cm", "Length": "6.5 m", "Thickness": "0.125 mm", "Dielectric Strength": "65 kV/mm", "Operating Temp": "-10°C to 80°C", "Brand": "Steelgrip+" },
+        applications: ["Wire Splicing", "Phase Identification", "Panel Wiring", "Cable Harnessing", "Moisture Sealing"]
       },
       { 
         id: "pvc-box", 
         name: "Steelgrip+ PVC Tape Box (30 Rolls)", 
         price: "Ask for Price", 
-        image: "/products/steelgrip-pvc-tape-box.png",
+        images: [
+          "/products/steelgrip-pvc-tape-box.png",
+          "https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?w=800&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=800&auto=format&fit=crop"
+        ],
         description: "Bulk packing of Steelgrip+ PVC Insulation Tape containing 30 rolls of assorted or single colors. Ideal for contractors and large projects.",
-        features: ["Bulk Value Pack", "30 Rolls per Box", "Original Packaging", "Superior Quality"],
-        specifications: { "Packaging": "Cardboard Box", "Quantity": "30 Rolls", "Box Dimension": "Assorted Colors or Single", "Brand": "Steelgrip+" }
+        detailedDescription: "Designed for industrial contractors and large-scale procurement, our Steelgrip+ 30-roll box provides the ultimate value. Each box contains genuine ISI-marked rolls featuring the same high-performance specifications as single units. Available in assorted color packs (RYB + Black/Green) for easy phase identification in complex three-phase systems.",
+        features: ["Economical Bulk Pricing", "Hassle-free Storage", "Assorted Color Options", "Sealed Industrial Pack", "Standard 6.5m Rolls"],
+        specifications: { "Packaging": "Corrugated Cardboard Box", "Quantity": "30 Rolls", "Box Weight": "Approx 1.2kg", "Tape Width": "1.70 cm", "Brand": "Steelgrip+" },
+        applications: ["Construction Projects", "Industrial Maintenance", "Electrical Workshops", "Wholesale Supply"]
       },
     ]
   },
@@ -80,28 +47,16 @@ export const categories = [
         id: "ht-1", 
         name: "HT Rubber Splicing Tape (19mm x 9m)", 
         price: "Ask for Price", 
-        image: "https://images.unsplash.com/photo-1607394034695-0e5f13de0d26?w=400&auto=format&fit=crop&q=60",
+        images: [
+          "https://images.unsplash.com/photo-1607394034695-0e5f13de0d26?w=800&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1590644365607-1c5a519a9a37?w=800&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&auto=format&fit=crop"
+        ],
         description: "High-voltage Ethylene Propylene Rubber (EPR) tape designed for terminating, splicing, and bus bar insulation up to 69kV. Features self-amalgamating properties.",
-        features: ["Self-Amalgamating", "Corona Resistant", "High Thermal Conductivity", "Ozone Resistant"],
-        specifications: { "Material": "Ethylene Propylene Rubber (EPR)", "Width": "19 mm", "Length": "9 m", "Thickness": "0.76 mm", "Voltage Rating": "Up to 69kV", "Operating Temp": "Up to 90°C (130°C Overload)", "Color": "Black" }
-      },
-      { 
-        id: "ht-2", 
-        name: "HT Rubber Splicing Tape (25mm x 9m)", 
-        price: "Ask for Price", 
-        image: "https://images.unsplash.com/photo-1607394034695-0e5f13de0d26?w=400&auto=format&fit=crop&q=60",
-        description: "Wider high-voltage Ethylene Propylene Rubber (EPR) tape designed for terminating, splicing, and bus bar insulation up to 69kV.",
-        features: ["Self-Amalgamating", "Corona Resistant", "High Thermal Conductivity", "Ozone Resistant"],
-        specifications: { "Material": "Ethylene Propylene Rubber (EPR)", "Width": "25 mm", "Length": "9 m", "Thickness": "0.76 mm", "Voltage Rating": "Up to 69kV", "Operating Temp": "Up to 90°C (130°C Overload)", "Color": "Black" }
-      },
-      { 
-        id: "ht-3", 
-        name: "Self-Amalgamating EPR Tape", 
-        price: "Ask for Price", 
-        image: "https://images.unsplash.com/photo-1607394034695-0e5f13de0d26?w=400&auto=format&fit=crop&q=60",
-        description: "General purpose self-amalgamating EPR tape that fuses to itself to form a solid void-free mass, ideal for moisture sealing of cable joints.",
-        features: ["Void-Free Fusion", "Moisture Sealing", "Excellent Aging Properties", "Highly Conformable"],
-        specifications: { "Material": "Ethylene Propylene Rubber (EPR)", "Width": "19 mm", "Length": "9.15 m", "Thickness": "0.76 mm", "Voltage Rating": "Up to 69kV", "Operating Temp": "Up to 90°C", "Color": "Black" }
+        detailedDescription: "This High-Tension (HT) Splicing Tape is engineered from Ethylene Propylene Rubber (EPR) for premium electrical protection up to 69,000 Volts. It is a self-amalgamating (self-fusing) tape that fuses into a solid, void-free mass after application, providing an airtight and moisture-proof seal. Essential for high-voltage terminations in switchgear and industrial transformers.",
+        features: ["Self-Amalgamating (Self-Fusing)", "Voltage Support up to 69kV", "Corona & Ozone Resistant", "Emergency Overload (130°C)", "Excellent Thermal Conductivity"],
+        specifications: { "Material": "Ethylene Propylene Rubber (EPR)", "Width": "19 mm", "Length": "9 m (30 ft)", "Thickness": "0.76 mm (30 mil)", "Dielectric Strength": "750 V/mil", "Operating Temp": "90°C Continuous", "Color": "Standard Black" },
+        applications: ["High Voltage Splicing", "Bus Bar Insulation", "Cable End Sealing", "Moisture Proofing", "Stress Cone Construction"]
       },
     ]
   },
@@ -115,46 +70,31 @@ export const categories = [
         id: "bc-1", 
         name: "Bare Copper Wire (8 SWG)", 
         price: "Ask for Price", 
-        image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&auto=format&fit=crop&q=60",
+        images: [
+          "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1563911302283-d2bc129e7570?w=800&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1516733725897-1aa73b87c8e8?w=800&auto=format&fit=crop"
+        ],
         description: "Heavy-duty 8 SWG solid bare copper wire primarily used for massive scale grounding grid systems and high-current bonding networks.",
-        features: ["99.9% Pure Electrolytic Copper", "High Conductivity", "Excellent Corrosion Resistance", "Annealed for Ductility"],
-        specifications: { "Material": "Pure Copper (EC Grade)", "Gauge (SWG)": "8", "Diameter": "4.06 mm", "Cross-Section": "12.97 sq.mm", "Conductivity": "99.9% IACS", "Temper": "Soft Annealed" }
+        detailedDescription: "Our 8 SWG Bare Copper Wire is manufactured from 99.9% pure electrolytic grade copper, ensuring maximum conductivity and corrosion resistance. It is soft-annealed for enhanced ductility, making it easy to form into grounding grids without cracking. Perfect for industrial earthing pits and lightning protection systems in Surat's heavy infrastructure.",
+        features: ["99.9% Pure EC Grade Copper", "High Conductivity (100% IACS)", "Annealed for Maximum Flexibility", "Zero Impurity Corrosion Resistance", "Heavy Gauge 4.06mm"],
+        specifications: { "Standard": "IS 13730 / BS EN 13601", "Gauge (SWG)": "8", "Diameter": "4.06 mm", "Cross-Section": "12.97 sq.mm", "Resistance": "1.34 ohm/km", "Temper": "Soft Annealed" },
+        applications: ["Industrial Earthing", "Lightning Protection", "Transformer Bonding", "Heavy Current Grounding"]
       },
       { 
         id: "bc-2", 
         name: "Bare Copper Wire (10 SWG)", 
         price: "Ask for Price", 
-        image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&auto=format&fit=crop&q=60",
+        images: [
+          "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1518709766631-a6a7f45921c3?w=800&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1563200174-27907572621c?w=800&auto=format&fit=crop"
+        ],
         description: "Standard 10 SWG solid bare copper wire used for residential and commercial grounding and direct burial applications.",
-        features: ["99.9% Pure Electrolytic Copper", "High Conductivity", "Excellent Corrosion Resistance", "Annealed for Ductility"],
-        specifications: { "Material": "Pure Copper (EC Grade)", "Gauge (SWG)": "10", "Diameter": "3.25 mm", "Cross-Section": "8.30 sq.mm", "Conductivity": "99.9% IACS", "Temper": "Soft Annealed" }
-      },
-      { 
-        id: "bc-3", 
-        name: "Bare Copper Wire (12 SWG)", 
-        price: "Ask for Price", 
-        image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&auto=format&fit=crop&q=60",
-        description: "Versatile 12 SWG solid bare copper wire used for structural grounding, transmission line bonding, and general electrical uses.",
-        features: ["99.9% Pure Electrolytic Copper", "High Conductivity", "Excellent Corrosion Resistance", "Annealed for Ductility"],
-        specifications: { "Material": "Pure Copper (EC Grade)", "Gauge (SWG)": "12", "Diameter": "2.64 mm", "Cross-Section": "5.48 sq.mm", "Conductivity": "99.9% IACS", "Temper": "Soft Annealed" }
-      },
-      { 
-        id: "bc-4", 
-        name: "Bare Copper Wire (14 SWG)", 
-        price: "Ask for Price", 
-        image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&auto=format&fit=crop&q=60",
-        description: "Light-duty 14 SWG solid bare copper wire used for equipment grounding, jumper applications, and telecommunications bonding.",
-        features: ["99.9% Pure Electrolytic Copper", "High Flexibility", "Excellent Corrosion Resistance", "Annealed for Ductility"],
-        specifications: { "Material": "Pure Copper (EC Grade)", "Gauge (SWG)": "14", "Diameter": "2.03 mm", "Cross-Section": "3.24 sq.mm", "Conductivity": "99.9% IACS", "Temper": "Soft Annealed" }
-      },
-      { 
-        id: "bc-5", 
-        name: "Flexible Bare Copper Braid", 
-        price: "Ask for Price", 
-        image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&auto=format&fit=crop&q=60",
-        description: "Woven flexible bare copper braid used for making highly flexible grounding connections, bonding straps, and vibration-absorbing links.",
-        features: ["Extreme Flexibility", "Vibration Absorbent", "Tinned Finish Available", "High Ampacity Rating"],
-        specifications: { "Material": "Woven Copper Wire", "Construction": "Flat or Tubular Braid", "Current Rating": "Customizable based on width/thickness", "Conductivity": "99.9% IACS", "Temper": "Soft Annealed" }
+        detailedDescription: "Specifically designed for commercial and high-end residential earthing, the 10 SWG Bare Copper Wire provides a reliable path for fault currents. It is highly resistant to soil-borne corrosion, ensuring longevity for direct-burial applications. Each roll is precision-drawn to maintain consistent diameter and resistance across its length.",
+        features: ["Electrolytic Grade Copper", "Precise 3.25mm Diameter", "Uniform Conductivity", "ISO Certified Production", "Rust-proof Properties"],
+        specifications: { "Standard": "IS 13730", "Gauge (SWG)": "10", "Diameter": "3.25 mm", "Cross-Section": "8.30 sq.mm", "Resistance": "2.09 ohm/km", "Temper": "Soft Annealed" },
+        applications: ["Residential Earthing", "Commercial Building Bonding", "Machine Grounding", "Electrical Panels"]
       },
     ]
   },
@@ -168,46 +108,16 @@ export const categories = [
         id: "sew-1", 
         name: "Super Enameled Copper Wire (18 SWG)", 
         price: "Ask for Price", 
-        image: "https://images.unsplash.com/photo-1562259949-e8e7689d7828?w=400&auto=format&fit=crop&q=60",
+        images: [
+          "https://images.unsplash.com/photo-1562259949-e8e7689d7828?w=800&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1581093583449-8045bb3291c5?w=800&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?w=800&auto=format&fit=crop"
+        ],
         description: "18 SWG magnet wire coated with a thin layer of advanced polyurethane/polyester enamel insulation for winding heavy-duty transformer and motor coils.",
-        features: ["High Thermal Resistance", "Excellent Dielectric Strength", "Pin-hole Free Varnish", "High Mechanical Strength"],
-        specifications: { "Material": "Enameled Copper", "Gauge (SWG)": "18", "Thermal Class": "Class F (155°C) or Class H (180°C)", "Insulation": "Polyurethane / Polyesterimide", "Breakdown Voltage": "> 5kV" }
-      },
-      { 
-        id: "sew-2", 
-        name: "Super Enameled Copper Wire (20 SWG)", 
-        price: "Ask for Price", 
-        image: "https://images.unsplash.com/photo-1562259949-e8e7689d7828?w=400&auto=format&fit=crop&q=60",
-        description: "20 SWG magnet wire coated with a thin layer of advanced polyurethane/polyester enamel insulation for winding medium-duty transformer and motor coils.",
-        features: ["High Thermal Resistance", "Excellent Dielectric Strength", "Pin-hole Free Varnish", "High Mechanical Strength"],
-        specifications: { "Material": "Enameled Copper", "Gauge (SWG)": "20", "Thermal Class": "Class F (155°C) or Class H (180°C)", "Insulation": "Polyurethane / Polyesterimide", "Breakdown Voltage": "> 5kV" }
-      },
-      { 
-        id: "sew-3", 
-        name: "Super Enameled Copper Wire (24 SWG)", 
-        price: "Ask for Price", 
-        image: "https://images.unsplash.com/photo-1562259949-e8e7689d7828?w=400&auto=format&fit=crop&q=60",
-        description: "24 SWG magnet wire coated with a thin layer of advanced polyurethane/polyester enamel insulation for winding precision coils, relays, and solenoids.",
-        features: ["High Thermal Resistance", "Excellent Dielectric Strength", "Pin-hole Free Varnish", "High Mechanical Strength"],
-        specifications: { "Material": "Enameled Copper", "Gauge (SWG)": "24", "Thermal Class": "Class F (155°C) or Class H (180°C)", "Insulation": "Polyurethane / Polyesterimide", "Breakdown Voltage": "> 5kV" }
-      },
-      { 
-        id: "sew-4", 
-        name: "Super Enameled Copper Wire (30 SWG)", 
-        price: "Ask for Price", 
-        image: "https://images.unsplash.com/photo-1562259949-e8e7689d7828?w=400&auto=format&fit=crop&q=60",
-        description: "Fine 30 SWG magnet wire coated with a thin layer of advanced polyurethane/polyester enamel insulation for winding small sensors, inductors, and micro-motors.",
-        features: ["High Thermal Resistance", "Excellent Dielectric Strength", "Pin-hole Free Varnish", "High Mechanical Strength"],
-        specifications: { "Material": "Enameled Copper", "Gauge (SWG)": "30", "Thermal Class": "Class F (155°C) or Class H (180°C)", "Insulation": "Polyurethane / Polyesterimide", "Breakdown Voltage": "> 3kV" }
-      },
-      { 
-        id: "sew-5", 
-        name: "Super Enameled Copper Wire (36 SWG)", 
-        price: "Ask for Price", 
-        image: "https://images.unsplash.com/photo-1562259949-e8e7689d7828?w=400&auto=format&fit=crop&q=60",
-        description: "Ultra-fine 36 SWG magnet wire coated with a thin layer of advanced polyurethane/polyester enamel insulation for ultra-precision electronics, watch coils, and advanced sensory equipment.",
-        features: ["High Thermal Resistance", "Excellent Dielectric Strength", "Pin-hole Free Varnish", "High Mechanical Strength"],
-        specifications: { "Material": "Enameled Copper", "Gauge (SWG)": "36", "Thermal Class": "Class F (155°C) or Class H (180°C)", "Insulation": "Polyurethane / Polyesterimide", "Breakdown Voltage": "> 2kV" }
+        detailedDescription: "Known as 'Magnet Wire', our 18 SWG Super Enameled Copper Wire features a high-grade Class H (180°C) thermal insulation. This ensures the wire can withstand intense heat inside motor windings and oil-immersed transformers without dielectric failure. The varnish is pin-hole free, providing exceptional mechanical and electrical reliability.",
+        features: ["Class H Thermal Rating (180°C)", "Excellent Dielectric Strength", "High Mechanical Scrape Resistance", "Superior Solderability", "Uniform Varnish Coating"],
+        specifications: { "Material": "Oxygen-Free Copper (OFC)", "Thermal Class": "Class H (180°C)", "Insulation": "PEI / PAI Dual Coat", "Breakdown Voltage": "> 5.5kV", "Diameter": "1.22 mm (Bare)", "Standard": "IS 13730-29" },
+        applications: ["Motor Rewinding", "Submersible Pumps", "Heavy Transformers", "Welding Machines", "Automotive Alternators"]
       },
     ]
   },
@@ -219,48 +129,18 @@ export const categories = [
     products: [
       { 
         id: "bh-1", 
-        name: "Brass Hex Nut (M4 - M12)", 
+        name: "Brass Hex Nut & Bolt (M4 - M12)", 
         price: "Ask for Price", 
-        image: "https://images.unsplash.com/photo-1581244277943-fe4a9c777540?w=400&auto=format&fit=crop&q=60",
-        description: "High-quality free-machining brass hex nuts manufactured to precise DIN/ISO standards, providing excellent electrical conductivity and corrosion resistance. Ideal for switchgear terminals.",
-        features: ["Non-Magnetic", "Excellent Conductivity", "Corrosion Resistant", "Precision Threading", "Rust-Proof"],
-        specifications: { "Material": "Free Cutting Brass IS 319 (Type 1)", "Thread Standard": "Metric / BSP / UNC", "Sizes Available": "M4 to M12", "Finish": "Natural / Nickel Plated", "Standard": "DIN 934" }
-      },
-      { 
-        id: "bh-2", 
-        name: "Brass Hex Head Bolt (M4 - M12)", 
-        price: "Ask for Price", 
-        image: "https://images.unsplash.com/photo-1581244277943-fe4a9c777540?w=400&auto=format&fit=crop&q=60",
-        description: "High-quality heavy-duty brass hex head bolts designed to bolt electrical busbars and panels where high conductivity and vibration resistance is paramount.",
-        features: ["Non-Magnetic", "Excellent Conductivity", "Corrosion Resistant", "Precision Threading", "Rust-Proof"],
-        specifications: { "Material": "Free Cutting Brass IS 319 (Type 1)", "Thread Standard": "Metric / BSP / UNC", "Sizes Available": "M4 to M12", "Finish": "Natural / Nickel Plated", "Standard": "DIN 933" }
-      },
-      { 
-        id: "bh-3", 
-        name: "Brass Plain Washer (M4 - M12)", 
-        price: "Ask for Price", 
-        image: "https://images.unsplash.com/photo-1581244277943-fe4a9c777540?w=400&auto=format&fit=crop&q=60",
-        description: "Stamped precision brass plain washers used to distribute loads in electrical assemblies, preventing damage to soft copper or aluminum busbars.",
-        features: ["Non-Magnetic", "Excellent Conductivity", "Corrosion Resistant", "Precisely Stamped", "Rust-Proof"],
-        specifications: { "Material": "Brass Sheet", "Sizes Available": "M4 to M12 inside diameter", "Finish": "Natural / Nickel / Tin Plated", "Standard": "DIN 125" }
-      },
-      { 
-        id: "bh-4", 
-        name: "Brass Spring Washer", 
-        price: "Ask for Price", 
-        image: "https://images.unsplash.com/photo-1581244277943-fe4a9c777540?w=400&auto=format&fit=crop&q=60",
-        description: "Phosphor-bronze or Brass spring washers used to prevent loose connections in heavy electrical machinery prone to extensive vibrations.",
-        features: ["Anti-Vibration", "Non-Magnetic", "Excellent Conductivity", "High Tension Support"],
-        specifications: { "Material": "Brass / Phosphor Bronze", "Sizes Available": "M4 to M12 inside diameter", "Finish": "Natural / Nickel Plated", "Standard": "DIN 127" }
-      },
-      { 
-        id: "bh-5", 
-        name: "Brass Terminal Block Screws", 
-        price: "Ask for Price", 
-        image: "https://images.unsplash.com/photo-1581244277943-fe4a9c777540?w=400&auto=format&fit=crop&q=60",
-        description: "Custom-machined brass terminal block screws (Pan head, Cheese head) specifically for MCB, MCCB, and electrical terminal block assembly.",
-        features: ["Non-Magnetic", "Excellent Conductivity", "Corrosion Resistant", "Custom Head Styles", "Captive Configurations"],
-        specifications: { "Material": "Free Cutting Brass IS 319 (Type 1)", "Head Style": "Pan / Cheese / Countersunk", "Drive Style": "Slotted / Phillips", "Finish": "Nickel / Tin Plated" }
+        images: [
+          "https://images.unsplash.com/photo-1581244277943-fe4a9c777540?w=800&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1563089145-599997674d42?w=800&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&auto=format&fit=crop"
+        ],
+        description: "High-quality free-machining brass fasteners providing excellent electrical conductivity and corrosion resistance. Ideal for switchgear terminals.",
+        detailedDescription: "Our Brass Hardware is precision-machined from IS-319 Grade 1 free-cutting brass. Unlike steel fasteners, brass is non-magnetic and highly conductive, preventing overheating at contact points in high-ampere busbars. These are heavily used in South Gujarat's textile machinery panels and industrial power distribution units.",
+        features: ["Non-Magnetic (Prevents EMI)", "Excellent Surface Conductivity", "Salt-Mist Corrosion Resistant", "Precision Metric Threading", "High Tensile Strength (Brass Grade)"],
+        specifications: { "Material": "Free Cutting Brass IS-319", "Thread Standard": "Metric / DIN 933/934", "Sizes": "M4, M6, M8, M10, M12", "Finish": "Natural Brass / Nickel", "Hardness": "90 HRB Minimum" },
+        applications: ["Electrical Busbars", "Panel Boards", "Instrumentation Panels", "Marine Environments", "Textile Machinery"]
       },
     ]
   },
@@ -272,30 +152,18 @@ export const categories = [
     products: [
       { 
         id: "cus-1", 
-        name: "Custom Electrical Terminals", 
+        name: "Custom Electrical Procurement", 
         price: "Ask for Quote", 
-        image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=400&auto=format&fit=crop&q=60",
-        description: "Specialized cable lugs, thimbles, and electrical terminals sourced according to custom requirements including bi-metallic options.",
-        features: ["Custom Tooling Sourced", "Any Size/Gauge Supported", "Fast Logistics Turnaround"],
-        specifications: { "Material Options": "Copper / Aluminum / Bi-Metallic / Brass", "Plating": "Tin / Nickel / Silver / Natural", "Lead Time": "Varies by MOQ" }
-      },
-      { 
-        id: "cus-2", 
-        name: "Specialized Panel Accessories", 
-        price: "Ask for Quote", 
-        image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=400&auto=format&fit=crop&q=60",
-        description: "Custom sourcing of specialized electrical panel accessories, DIN rails, cable ties, heat shrink tubing, and warning labels.",
-        features: ["Wide Vendor Network", "Certified Sources", "Fast Logistics Turnaround"],
-        specifications: { "Type": "Any Custom Requirement", "Compliance Options": "RoHS / CE / ISI / UL", "Lead Time": "Varies by Order Volume" }
-      },
-      { 
-        id: "cus-3", 
-        name: "Contractor Spares", 
-        price: "Ask for Quote", 
-        image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=400&auto=format&fit=crop&q=60",
-        description: "Bulk sourcing for hard-to-find electrical contractor spares, legacy components, and imported heavy industrial switchgear parts.",
-        features: ["Legacy Support", "International Sourcing Available", "Fast Logistics Turnaround"],
-        specifications: { "Application": "Industrial Spares / MRO", "Brands": "Varied (Domestic & International)", "Lead Time": "Varies based on component rarity" }
+        images: [
+          "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1566576721346-d4a3b4eaad21?w=800&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=800&auto=format&fit=crop"
+        ],
+        description: "Specialized cable lugs, terminals, and custom accessories sourced according to your specific project needs.",
+        detailedDescription: "Can't find a specific gauge or material? Balaji Enterprise specializes in custom sourcing for Surat's industrial sector. Leveraging our deep network of manufacturers across India, we can provide specialized electrical terminals, bi-metallic lugs, heat-shrink sleeves, and heavy-duty industrial switchgear components on-demand.",
+        features: ["Nationwide Sourcing Network", "Bulk Pricing Leverage", "Quality Verification Assured", "Fast Logistics (Local Surat)", "Compliance Support (RoHS/UL/ISI)"],
+        specifications: { "Service": "Custom Procurement", "Sourcing Lead Time": "3-7 Days Typical", "MOQ": "Varies by Product", "Geography": "Pan India Sourcing", "Delivery": "Doorstep in Surat/Gujarat" },
+        applications: ["Govt Tender Tendering", "Bespoke Machine Building", "Panel Refurbishing", "Urgent Maintenance (MRO)", "Specialized Projects"]
       },
     ]
   }

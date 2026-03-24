@@ -4,7 +4,7 @@ import { FaWhatsapp, FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/
 
 export function Navbar() {
   return (
-    <header className="sticky top-0 z-50 bg-[#0F3D81] border-b border-white/5 backdrop-blur-md">
+    <header className="sticky top-0 z-50 bg-brand-primary border-b border-white/5 backdrop-blur-md">
       {/* ── TOP INFO BAR (Always On Top Priority) ── */}
       <div className="w-full bg-brand-primary/40 border-b border-white/5 hidden md:block">
         <div className="max-w-7xl mx-auto px-6 lg:px-20 py-2.5 flex justify-between items-center text-[10px] font-mono uppercase tracking-[0.25em] text-blue-200/80">
@@ -43,18 +43,18 @@ export function Navbar() {
           </div>
           <div className="hidden sm:block">
             <div className="text-white font-heading font-bold text-xl leading-none tracking-tight group-hover:text-accent-brass transition-colors uppercase italic">Balaji Enterprise</div>
-            <div className="text-blue-300 font-mono text-[9px] uppercase tracking-widest mt-1 opacity-80 font-black">Industrial Supply Specialist</div>
+            <div className="text-blue-300 font-mono text-[9px] uppercase tracking-widest mt-1 opacity-80 font-black">Quality Electrical Supplier</div>
           </div>
         </Link>
         
         <nav className="hidden lg:flex items-center gap-10 text-[11px] font-bold uppercase tracking-[0.2em] text-blue-200">
           {[
             { label: "Home", href: "/" },
-            { label: "Inventory", href: "/categories" },
-            { label: "Strategy", href: "/#about" },
-            { label: "Dispatch Desk", href: "/#contact" }
+            { label: "Products", href: "/categories" },
+            { label: "About Us", href: "/#about" },
+            { label: "Contact Us", href: "/#contact" }
           ].map((link, i) => (
-            <Link key={i} href={link.href} className="hover:text-white transition-all hover:translate-y-[-1px] relative after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-px after:bg-accent-brass hover:after:w-full after:transition-all">
+            <Link key={i} href={link.href} className="hover:text-white transition-all hover:-translate-y-px relative after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-px after:bg-accent-brass hover:after:w-full after:transition-all">
               {link.label}
             </Link>
           ))}
@@ -62,8 +62,8 @@ export function Navbar() {
 
         <div className="flex items-center gap-4 text-white">
           <div className="hidden xl:flex flex-col items-end mr-2">
-            <span className="text-[10px] font-mono text-blue-300/60 uppercase tracking-widest font-black leading-none mb-1">Logistics Support</span>
-            <span className="text-sm font-bold font-heading italic tracking-tighter">+91 76987 87886</span>
+            <span className="text-[10px] font-mono text-blue-300/60 uppercase tracking-widest font-black leading-none mb-1">Customer Support</span>
+            <span className="text-sm font-bold font-heading italic tracking-tighter shadow-sm">+91 76987 87886</span>
           </div>
           <a
             href="https://wa.me/917698787886"
@@ -71,7 +71,7 @@ export function Navbar() {
             rel="noopener noreferrer"
             className="group shrink-0 inline-flex items-center gap-3 bg-brand-secondary hover:bg-white hover:text-brand-primary text-white text-[10px] font-black uppercase tracking-[0.2em] px-8 py-4 rounded-none transition-all shadow-[6px_6px_0px_rgba(0,0,0,0.3)] hover:shadow-[4px_4px_0px_#EAB308] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none"
           >
-            <FaWhatsapp className="w-4 h-4 text-accent-brass group-hover:text-brand-primary" /> Technical Quote
+            <FaWhatsapp className="w-4 h-4 text-accent-brass group-hover:text-brand-primary" /> Get Quick Quote
           </a>
         </div>
       </div>

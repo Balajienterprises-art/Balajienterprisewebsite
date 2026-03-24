@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Arvo, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Script from "next/script";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -131,12 +132,26 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${arvo.variable} ${geistMono.variable}`} suppressHydrationWarning data-scroll-behavior="smooth">
       <body className="w-full overflow-x-hidden min-h-screen flex flex-col">
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-BPCSEP98ZE"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-BPCSEP98ZE');
+          `}
+        </Script>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
         <Navbar />
-        <main className="flex-grow w-full">
+        <main className="grow w-full">
           {children}
         </main>
         <Footer />

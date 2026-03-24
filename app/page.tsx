@@ -56,9 +56,9 @@ const services = [
 
 
 const whyUs = [
-  { Icon: FaShieldAlt, title: "Quality Assured", desc: "Every product sourced from reputed manufacturers meeting industry standards." },
-  { Icon: FaTruck, title: "Reliable Supply", desc: "Consistent stock and prompt dispatch for all your project timelines." },
-  { Icon: FaShieldAlt, title: "Customer First", desc: "Honest advice and transparent pricing from inquiry to delivery." },
+  { Icon: FaShieldAlt, title: "Quality Assured", desc: "Every product we supply is sourced from reputable manufacturers and meets strict industry standards." },
+  { Icon: FaTruck, title: "Timely Delivery", desc: "Consistent stock and prompt dispatch ensuring your project timelines are always met." },
+  { Icon: FaShieldAlt, title: "Strong Support", desc: "Professionally managed trading dedicated to excellence and reliable customer service." },
 ];
 
 /* ── PAGE ───────────────────────────────────────── */
@@ -159,7 +159,7 @@ export default function Home() {
             transition={{ delay: 0.1 }}
             className="text-blue-100/95 text-base md:text-2xl max-w-xl mx-auto leading-relaxed font-medium"
           >
-            Powering industrial growth with precision-engineered electrical components & supplies
+            A leading solution provider for HT/LT electrical products, dedicated to delivering excellence in every transaction.
           </motion.p>
 
           <motion.div 
@@ -177,12 +177,56 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ══ CORE SERVICES (Technical Grid) ══ */}
+      {/* ══ MISSION & VISION (Strategically Placed) ══ */}
+      <section className="py-20 bg-slate-50 border-y border-slate-200">
+        <div className="max-w-7xl mx-auto px-6 lg:px-20 grid grid-cols-1 md:grid-cols-2 gap-12">
+          <motion.div {...fadeUp} className="bg-white p-10 border border-slate-200 shadow-sm relative overflow-hidden group">
+            <div className="absolute top-0 right-0 w-24 h-24 bg-brand-primary opacity-5 -mr-12 -mt-12 rounded-full group-hover:scale-150 transition-transform duration-700" />
+            <span className="font-mono text-[10px] uppercase tracking-widest text-brand-secondary font-bold mb-4 block">Our Mission</span>
+            <h3 className="text-2xl font-heading font-black text-brand-primary uppercase italic mb-4">Powering Progress</h3>
+            <p className="text-slate-600 leading-relaxed font-sans italic">
+              &quot;To provide reliable, high-quality electrical products and build long-term relationships with our customers through trust, service, and value.&quot;
+            </p>
+          </motion.div>
+          <motion.div {...fadeUp} transition={{ delay: 0.1 }} className="bg-white p-10 border border-slate-200 shadow-sm relative overflow-hidden group">
+            <div className="absolute top-0 right-0 w-24 h-24 bg-accent-brass opacity-10 -mr-12 -mt-12 rounded-full group-hover:scale-150 transition-transform duration-700" />
+            <span className="font-mono text-[10px] uppercase tracking-widest text-brand-secondary font-bold mb-4 block">Our Vision</span>
+            <h3 className="text-2xl font-heading font-black text-brand-primary uppercase italic mb-4">Leadership & Integrity</h3>
+            <p className="text-slate-600 leading-relaxed font-sans italic">
+              &quot;To become a leading electrical trading company recognized for excellence, integrity, and customer satisfaction.&quot;
+            </p>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* ══ WHY US (Quality Promise) ══ */}
+      <section className="py-16 md:py-24 px-6 lg:px-20 bg-bg-alt relative overflow-hidden">
+        <div className="absolute left-0 top-0 bottom-0 w-1 md:w-2 bg-brand-primary opacity-10" />
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
+          {whyUs.map((w, i) => (
+            <motion.div
+              key={i}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: i * 0.1 }}
+              className="relative p-6 md:p-8 border-l-2 border-slate-200 hover:border-brand-secondary transition-colors"
+            >
+              <div className="text-brand-secondary font-mono text-[9px] md:text-[10px] uppercase tracking-widest mb-4 opacity-50 font-bold">Quality Promise</div>
+              <w.Icon className="w-6 h-6 md:w-8 md:h-8 text-brand-primary mb-6" />
+              <h3 className="font-heading font-bold text-lg md:text-xl text-brand-primary mb-3 uppercase italic">{w.title}</h3>
+              <p className="text-xs md:text-sm text-text-muted leading-relaxed">{w.desc}</p>
+            </motion.div>
+          ))}
+        </div>
+      </section>
+
+      {/* ══ CORE SERVICES (Product Grid) ══ */}
       <section id="services" className="py-16 md:py-32 px-6 lg:px-20 bg-white">
         <div className="max-w-7xl mx-auto">
           <motion.div {...fadeUp} className="mb-12 md:mb-20 max-w-2xl text-center md:text-left">
-            <span className="font-mono text-[10px] md:text-xs uppercase tracking-[0.3em] text-brand-secondary font-bold">Capabilities / 01</span>
-            <h2 className="text-3xl md:text-6xl font-heading font-bold text-brand-primary mt-4 tracking-tighter uppercase italic">Our Core Domains</h2>
+            <span className="font-mono text-[10px] md:text-xs uppercase tracking-[0.3em] text-brand-secondary font-bold">What We Offer / 01</span>
+            <h2 className="text-3xl md:text-6xl font-heading font-bold text-brand-primary mt-4 tracking-tighter uppercase italic">Our Product Range</h2>
             <div className="w-20 h-2 bg-accent-brass mt-6 mx-auto md:mx-0" />
           </motion.div>
 
@@ -221,41 +265,19 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ══ WHY US (Technical Spec Style) ══ */}
-      <section className="py-16 md:py-24 px-6 lg:px-20 bg-bg-alt relative overflow-hidden">
-        <div className="absolute left-0 top-0 bottom-0 w-1 md:w-2 bg-brand-primary opacity-10" />
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
-          {whyUs.map((w, i) => (
-            <motion.div
-              key={i}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="relative p-6 md:p-8 border-l-2 border-slate-200 hover:border-brand-secondary transition-colors"
-            >
-              <div className="text-brand-secondary font-mono text-[9px] md:text-[10px] uppercase tracking-widest mb-4 opacity-50 font-bold">Metric_{i+1}</div>
-              <w.Icon className="w-6 h-6 md:w-8 md:h-8 text-brand-primary mb-6" />
-              <h3 className="font-heading font-bold text-lg md:text-xl text-brand-primary mb-3 uppercase italic">{w.title}</h3>
-              <p className="text-xs md:text-sm text-text-muted leading-relaxed">{w.desc}</p>
-            </motion.div>
-          ))}
-        </div>
-      </section>
-
-      {/* ══ PRODUCT CATEGORIES (Asymmetric Grid) ══ */}
+      {/* ══ PRODUCT CATEGORIES (Selection Grid) ══ */}
       <section id="products" className="py-16 md:py-32 px-6 lg:px-20 bg-white">
         <div className="max-w-7xl mx-auto">
           <motion.div {...fadeUp} className="mb-12 md:mb-20 flex flex-col md:flex-row items-center md:items-end justify-between gap-8 text-center md:text-left">
             <div className="max-w-xl">
-               <span className="font-mono text-[10px] md:text-xs uppercase tracking-[0.3em] text-brand-primary font-bold">Inventory / 02</span>
-               <h2 className="text-3xl md:text-6xl font-heading font-bold text-brand-primary mt-4 tracking-tighter uppercase italic">Supply Catalog</h2>
+               <span className="font-mono text-[10px] md:text-xs uppercase tracking-[0.3em] text-brand-primary font-bold">Products / 02</span>
+               <h2 className="text-3xl md:text-6xl font-heading font-bold text-brand-primary mt-4 tracking-tighter uppercase italic">Supply List</h2>
             </div>
             <Link
               href="/categories"
               className="w-full md:w-auto px-10 py-5 bg-brand-primary text-white font-heading font-bold uppercase tracking-widest text-[10px] md:text-xs hover:bg-brand-secondary transition-all"
             >
-              Browse Full Inventory
+              Browse All Products
             </Link>
           </motion.div>
 
@@ -270,7 +292,7 @@ export default function Home() {
                 className="group relative"
               >
                 <Link href={`/categories/${c.id}`} className="block">
-                  <div className="relative aspect-[4/5] overflow-hidden bg-slate-100 mb-6 border border-slate-100">
+                  <div className="relative aspect-4/5 overflow-hidden bg-slate-100 mb-6 border border-slate-100">
                     <Image
                       src={c.image}
                       alt={c.name}
@@ -280,7 +302,7 @@ export default function Home() {
                     />
                     <div className="absolute top-0 right-0 p-4">
                        <span className="font-mono text-[9px] md:text-[10px] font-bold bg-white text-brand-primary px-3 py-1 border border-brand-primary/10">
-                         QTY_{c.products.length}
+                         Items: {c.products.length}
                        </span>
                     </div>
                   </div>
@@ -310,21 +332,21 @@ export default function Home() {
             className="space-y-8 md:space-y-10 text-center md:text-left"
           >
             <div className="space-y-4">
-               <span className="font-mono text-[10px] md:text-xs uppercase tracking-[0.4em] text-accent-brass font-bold">The Firm / 03</span>
+               <span className="font-mono text-[10px] md:text-xs uppercase tracking-[0.4em] text-accent-brass font-bold">About Us / 03</span>
                <div className="inline-flex items-center gap-2 bg-white/10 px-3 py-1 border-l-2 border-accent-brass mb-2">
-                 <span className="font-mono text-[9px] text-accent-brass font-bold uppercase tracking-widest">Top Priority</span>
+                 <span className="font-mono text-[9px] text-accent-brass font-bold uppercase tracking-widest">Our Promise</span>
                </div>
                <h2 className="text-3xl sm:text-4xl md:text-7xl font-heading font-bold uppercase italic leading-[1.1] md:leading-[0.9] tracking-tighter">
-                 Surat's Strategic <br/> Supply Partner.
+                 Surat&apos;s Trusted <br/> Supply Partner.
                </h2>
             </div>
             
             <div className="grid grid-cols-1 gap-6 md:gap-8 text-blue-100/70 text-base md:text-lg font-sans max-w-xl">
               <p>
-                Balaji Enterprise isn&apos;t just a trader; we are the backbone for heavy industrial procurement in Kamrej. 
+                Balaji Enterprise is a leading solution provider for HT/LT electrical products. We are a professionally managed electrical trading company dedicated to delivering excellence in every transaction.
               </p>
               <p>
-                Founded on the principles of technical precision and local promptness, we bridge the gap between world-class standards and Gujarat&apos;s project timelines.
+                Backed by industry experience and strong supplier networks, we ensure that our clients receive only genuine and certified products. We specialize in supplying a wide range of electrical materials that meet industry standards and customer expectations.
               </p>
             </div>
           </motion.div>
@@ -345,8 +367,8 @@ export default function Home() {
                />
             </div>
              <div className="absolute -bottom-5 -right-5 md:-bottom-10 md:-right-10 w-32 h-32 md:w-48 md:h-48 bg-accent-brass p-4 md:p-8 text-brand-primary hidden sm:block border-4 md:border-8 border-brand-primary">
-                <span className="font-mono text-[8px] md:text-xs uppercase tracking-widest font-bold block mb-2 md:mb-4">Auth_Sign</span>
-                <span className="font-heading font-bold text-sm md:text-lg leading-tight block italic">Verified Supply Chain</span>
+                <span className="font-mono text-[8px] md:text-xs uppercase tracking-widest font-bold block mb-2 md:mb-4">Verified</span>
+                <span className="font-heading font-bold text-sm md:text-lg leading-tight block italic">Original Products Only</span>
              </div>
           </motion.div>
         </div>
@@ -368,16 +390,16 @@ export default function Home() {
                 a: "Our headquarters and dispatch center are located at Plot 185, Swarna Bhumi Soc., Kamrej, Surat — 394180. We serve the entire Gujarat industrial belt with rapid logistics."
               },
               {
-                q: "What brands of insulation tapes do you supply?",
-                a: "We are primary distributors for Steelgrip+ PVC Tapes. We also stock professional-grade HT Rubber (EPR) splicing tapes and self-amalgamating tapes for high-voltage applications."
+                q: "What brands of tapes do you supply?",
+                a: "We are primary suppliers for Steelgrip+ PVC Tapes. We also stock professional-grade rubber splicing tapes and self-fusing tapes for various electrical works."
               },
               {
-                q: "Do you maintain ready stock for bare copper wire?",
-                a: "Yes, we maintain extensive inventory of bare copper wire in 8, 10, 12, and 14 SWG gauges, ensuring immediate dispatch for project-critical winding and grounding requirements."
+                q: "Do you have ready stock for copper wire?",
+                a: "Yes, we maintain extensive inventory of bare copper wire in common sizes like 8, 10, 12, and 14 SWG, ensuring fast delivery for your urgent needs."
               },
               {
-                q: "How can I request a technical bulk quote?",
-                a: "The fastest way to get a technical quote is via our WhatsApp Dispatch Desk at +91 76987 87886. Simply send your required gauge and quantity for an immediate estimate."
+                q: "How can I request a bulk order quote?",
+                a: "The fastest way to get a price estimate is via our WhatsApp Support at +91 76987 87886. Simply send your required type and quantity for an immediate response."
               }
             ].map((faq, idx) => (
               <motion.div 
@@ -405,15 +427,15 @@ export default function Home() {
         <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-12 md:gap-20">
           <div className="lg:w-1/2 space-y-8 md:space-y-12">
             <div className="space-y-4 text-center md:text-left">
-               <span className="font-mono text-[10px] md:text-xs uppercase tracking-[0.4em] text-brand-secondary font-bold">Operations / 04</span>
-               <h2 className="text-3xl sm:text-5xl md:text-7xl font-heading font-bold text-brand-primary uppercase italic tracking-tighter">Reach Out.</h2>
+               <span className="font-mono text-[10px] md:text-xs uppercase tracking-[0.4em] text-brand-secondary font-bold">Contact Us / 04</span>
+               <h2 className="text-3xl sm:text-5xl md:text-7xl font-heading font-bold text-brand-primary uppercase italic tracking-tighter">Get in Touch.</h2>
             </div>
             
             <div className="space-y-6 md:space-y-10">
               {[
-                { Icon: FaPhone, label: "Dispatch Desk", value: "+91 76987 87886", href: "tel:+917698787886" },
-                { Icon: FaEnvelope, label: "Logistics Email", value: "balajienterprise.buz@gmail.com", href: "mailto:balajienterprise.buz@gmail.com" },
-                { Icon: FaMapMarkerAlt, label: "H.O. Kamrej", value: "Plot 185, Swarna Bhumi Soc., Kamrej, Surat — 394180", href: "#" },
+                { Icon: FaPhone, label: "Call Our Office", value: "+91 76987 87886", href: "tel:+917698787886" },
+                { Icon: FaEnvelope, label: "Email Support", value: "balajienterprise.buz@gmail.com", href: "mailto:balajienterprise.buz@gmail.com" },
+                { Icon: FaMapMarkerAlt, label: "Main Office (Kamrej)", value: "Plot 185, Swarna Bhumi Soc., Kamrej, Surat — 394180", href: "#" },
               ].map((c, i) => (
                 <a key={i} href={c.href} className="flex flex-col sm:flex-row items-center md:items-start gap-4 md:gap-8 group text-center md:text-left">
                   <div className="w-12 h-12 md:w-16 md:h-16 bg-bg-alt flex items-center justify-center shrink-0 border border-slate-100 group-hover:bg-brand-primary transition-all">
@@ -434,9 +456,9 @@ export default function Home() {
              className="lg:w-1/2 bg-bg-alt p-8 md:p-12 border border-slate-200 relative"
           >
              <div className="absolute top-0 right-10 w-12 h-2 bg-brand-primary" />
-             <h3 className="text-2xl md:text-3xl font-heading font-bold text-brand-primary uppercase italic mb-6">Quick Sourcing</h3>
+             <h3 className="text-2xl md:text-3xl font-heading font-bold text-brand-primary uppercase italic mb-6">Quick Price Estimate</h3>
              <p className="text-xs md:text-base text-text-muted mb-8 md:mb-10 leading-relaxed font-sans">
-               Need specific copper wire gauges? Message us directly for an immediate technical quote and lead time.
+               Need details on specific items or current prices? Message us directly for an immediate estimate and delivery timeline.
              </p>
              <a
                href="https://wa.me/917698787886"
