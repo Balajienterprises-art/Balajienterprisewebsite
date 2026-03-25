@@ -10,9 +10,8 @@ export const categories = [
         name: "Steelgrip+ PVC Insulation Tape (Single Roll)", 
         price: "Ask for Price", 
         images: [
-          "/products/steelgrip-pvc-tape-rolls.png",
-          "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=800&auto=format&fit=crop",
-          "https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800&auto=format&fit=crop"
+          "/balaji product images/pvc-tape-1.jpeg",
+          "/balaji product images/pvc-tape-2.jpeg"
         ],
         description: "Industrial-grade flame-retardant PVC tape by Steelgrip+. Designed for primary electrical insulation of wire and cable splices, and color-coding applications.",
         detailedDescription: "Steelgrip+ PVC Insulation Tape is a premium-grade electrical tape made from high-quality polyvinyl chloride (PVC) with a pressure-sensitive rubber adhesive. Conforming to BIS IS 7809 standards, it offers superior dielectric strength of up to 6kV, making it the trusted choice for professional electricians across Gujarat. Its self-extinguishing properties ensure maximum safety in panel wiring and household installations.",
@@ -40,7 +39,7 @@ export const categories = [
   {
     id: "ht-tapes",
     name: "HT Rubber (EPR) Tape",
-    image: "https://images.unsplash.com/photo-1607394034695-0e5f13de0d26?w=600&auto=format&fit=crop&q=70",
+    image: "/balaji product images/ht-rubber-1.jpeg",
     description: "Ethylene Propylene Rubber tape for high-voltage cable insulation, joints, and splicing applications up to 69kV.",
     products: [
       { 
@@ -48,9 +47,9 @@ export const categories = [
         name: "HT Rubber Splicing Tape (19mm x 9m)", 
         price: "Ask for Price", 
         images: [
-          "https://images.unsplash.com/photo-1607394034695-0e5f13de0d26?w=800&auto=format&fit=crop",
-          "https://images.unsplash.com/photo-1590644365607-1c5a519a9a37?w=800&auto=format&fit=crop",
-          "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&auto=format&fit=crop"
+          "/balaji product images/ht-rubber-1.jpeg",
+          "/balaji product images/ht-rubber-2.jpeg",
+          "/balaji product images/ht-rubber-3.jpeg"
         ],
         description: "High-voltage Ethylene Propylene Rubber (EPR) tape designed for terminating, splicing, and bus bar insulation up to 69kV. Features self-amalgamating properties.",
         detailedDescription: "This High-Tension (HT) Splicing Tape is engineered from Ethylene Propylene Rubber (EPR) for premium electrical protection up to 69,000 Volts. It is a self-amalgamating (self-fusing) tape that fuses into a solid, void-free mass after application, providing an airtight and moisture-proof seal. Essential for high-voltage terminations in switchgear and industrial transformers.",
@@ -63,7 +62,7 @@ export const categories = [
   {
     id: "bare-copper",
     name: "Bare Copper Wire",
-    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&auto=format&fit=crop&q=70",
+    image: "/balaji product images/bare-copper-1.jpeg",
     description: "Soft-drawn and hard-drawn bare copper conductors for earthing, bonding, and high-conductivity wiring applications.",
     products: [
       { 
@@ -71,9 +70,9 @@ export const categories = [
         name: "Bare Copper Wire (8 SWG)", 
         price: "Ask for Price", 
         images: [
-          "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&auto=format&fit=crop",
-          "https://images.unsplash.com/photo-1563911302283-d2bc129e7570?w=800&auto=format&fit=crop",
-          "https://images.unsplash.com/photo-1516733725897-1aa73b87c8e8?w=800&auto=format&fit=crop"
+          "/balaji product images/bare-copper-1.jpeg",
+          "/balaji product images/bare-copper-2.jpeg",
+          "/balaji product images/bare-copper-3.jpeg"
         ],
         description: "Heavy-duty 8 SWG solid bare copper wire primarily used for massive scale grounding grid systems and high-current bonding networks.",
         detailedDescription: "Our 8 SWG Bare Copper Wire is manufactured from 99.9% pure electrolytic grade copper, ensuring maximum conductivity and corrosion resistance. It is soft-annealed for enhanced ductility, making it easy to form into grounding grids without cracking. Perfect for industrial earthing pits and lightning protection systems in Surat's heavy infrastructure.",
@@ -86,9 +85,9 @@ export const categories = [
         name: "Bare Copper Wire (10 SWG)", 
         price: "Ask for Price", 
         images: [
-          "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&auto=format&fit=crop",
-          "https://images.unsplash.com/photo-1518709766631-a6a7f45921c3?w=800&auto=format&fit=crop",
-          "https://images.unsplash.com/photo-1563200174-27907572621c?w=800&auto=format&fit=crop"
+          "/balaji product images/bare-copper-1.jpeg",
+          "/balaji product images/bare-copper-2.jpeg",
+          "/balaji product images/bare-copper-3.jpeg"
         ],
         description: "Standard 10 SWG solid bare copper wire used for residential and commercial grounding and direct burial applications.",
         detailedDescription: "Specifically designed for commercial and high-end residential earthing, the 10 SWG Bare Copper Wire provides a reliable path for fault currents. It is highly resistant to soil-borne corrosion, ensuring longevity for direct-burial applications. Each roll is precision-drawn to maintain consistent diameter and resistance across its length.",
@@ -101,7 +100,7 @@ export const categories = [
   {
     id: "enameled-wire",
     name: "Super Enameled Wire",
-    image: "https://images.unsplash.com/photo-1562259949-e8e7689d7828?w=600&auto=format&fit=crop&q=70",
+    image: "/balaji product images/enameled-wire-1.jpg",
     description: "Class F & H enameled copper wire for motors, transformers, coils, and precision winding applications.",
     products: [
       { 
@@ -109,9 +108,9 @@ export const categories = [
         name: "Super Enameled Copper Wire (18 SWG)", 
         price: "Ask for Price", 
         images: [
-          "https://images.unsplash.com/photo-1562259949-e8e7689d7828?w=800&auto=format&fit=crop",
-          "https://images.unsplash.com/photo-1581093583449-8045bb3291c5?w=800&auto=format&fit=crop",
-          "https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?w=800&auto=format&fit=crop"
+          "/balaji product images/enameled-wire-1.jpg",
+          "/balaji product images/enameled-wire-2.jpg",
+          "/balaji product images/enameled-wire-3.jpg"
         ],
         description: "18 SWG magnet wire coated with a thin layer of advanced polyurethane/polyester enamel insulation for winding heavy-duty transformer and motor coils.",
         detailedDescription: "Known as 'Magnet Wire', our 18 SWG Super Enameled Copper Wire features a high-grade Class H (180°C) thermal insulation. This ensures the wire can withstand intense heat inside motor windings and oil-immersed transformers without dielectric failure. The varnish is pin-hole free, providing exceptional mechanical and electrical reliability.",
@@ -124,7 +123,7 @@ export const categories = [
   {
     id: "brass-hardware",
     name: "Brass Nut, Bolt & Washer",
-    image: "https://images.unsplash.com/photo-1581244277943-fe4a9c777540?w=600&auto=format&fit=crop&q=70",
+    image: "/balaji product images/brass-1.jpeg",
     description: "Corrosion-resistant precision brass fasteners designed specifically for electrical panels, switchgear, and instrumentation.",
     products: [
       { 
@@ -132,9 +131,9 @@ export const categories = [
         name: "Brass Hex Nut & Bolt (M4 - M12)", 
         price: "Ask for Price", 
         images: [
-          "https://images.unsplash.com/photo-1581244277943-fe4a9c777540?w=800&auto=format&fit=crop",
-          "https://images.unsplash.com/photo-1563089145-599997674d42?w=800&auto=format&fit=crop",
-          "https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&auto=format&fit=crop"
+          "/balaji product images/brass-1.jpeg",
+          "/balaji product images/brass-2.jpeg",
+          "/balaji product images/brass-3.jpeg"
         ],
         description: "High-quality free-machining brass fasteners providing excellent electrical conductivity and corrosion resistance. Ideal for switchgear terminals.",
         detailedDescription: "Our Brass Hardware is precision-machined from IS-319 Grade 1 free-cutting brass. Unlike steel fasteners, brass is non-magnetic and highly conductive, preventing overheating at contact points in high-ampere busbars. These are heavily used in South Gujarat's textile machinery panels and industrial power distribution units.",
