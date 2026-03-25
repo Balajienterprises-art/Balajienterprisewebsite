@@ -239,7 +239,7 @@ export default async function ProductDetailPage({ params }: { params: Promise<{ 
             "@context": "https://schema.org",
             "@type": "Product",
             "name": product.name,
-            "image": product.images?.[0] || product.image ? `https://balajienterprise.com${product.images?.[0] || product.image}` : "https://balajienterprise.com/hero_final.png",
+            "image": product.images?.[0] || product.image ? `https://www.balajielectricalproducts.com${product.images?.[0] || product.image}` : "https://www.balajielectricalproducts.com/hero_final.png",
             "description": product.description || `High-quality ${product.name} from Balaji Enterprise.`,
             "brand": {
               "@type": "Brand",
@@ -247,7 +247,7 @@ export default async function ProductDetailPage({ params }: { params: Promise<{ 
             },
             "offers": {
               "@type": "Offer",
-              "url": `https://balajienterprise.com/products/${product.id}`,
+              "url": `https://www.balajielectricalproducts.com/products/${product.id}`,
               "priceCurrency": "INR",
               "price": "0",
               "availability": "https://schema.org/InStock"

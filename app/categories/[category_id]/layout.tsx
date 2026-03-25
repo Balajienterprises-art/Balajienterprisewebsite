@@ -45,19 +45,19 @@ export default async function CategoryLayout({
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://balajienterprise.com"
+        "item": "https://www.balajielectricalproducts.com"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Catalog",
-        "item": "https://balajienterprise.com/categories"
+        "item": "https://www.balajielectricalproducts.com/categories"
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": category?.name || "Category",
-        "item": `https://balajienterprise.com/categories/${category_id}`
+        "item": `https://www.balajielectricalproducts.com/categories/${category_id}`
       }
     ]
   };

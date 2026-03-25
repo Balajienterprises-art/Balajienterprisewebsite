@@ -20,7 +20,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://balajienterprise.com"),
+  metadataBase: new URL("https://www.balajielectricalproducts.com"),
   title: {
     default: "Balaji Enterprise | #1 Industrial Electrical Supplier — Surat, Gujarat",
     template: "%s | Balaji Enterprise Surat",
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Balaji Enterprise | Surat's Trusted Industrial Supplier",
     description: "Quality sourcing for industrial electrical components. Based in Surat, Gujarat.",
-    url: "https://balajienterprise.com",
+    url: "https://www.balajielectricalproducts.com",
     siteName: "Balaji Enterprise",
     locale: "en_IN",
     type: "website",
@@ -94,9 +94,9 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Balaji Enterprise",
-    "image": "https://balajienterprise.com/hero_final.png",
-    "@id": "https://balajienterprise.com",
-    "url": "https://balajienterprise.com",
+    "image": "https://www.balajielectricalproducts.com/hero_final.png",
+    "@id": "https://www.balajielectricalproducts.com",
+    "url": "https://www.balajielectricalproducts.com",
     "telephone": "+917698787886",
     "address": {
       "@type": "PostalAddress",

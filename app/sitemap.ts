@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next'
 import { categories } from './data/data'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://balajienterprise.com'
+  const baseUrl = 'https://www.balajielectricalproducts.com'
 
   const routes = [
     '',
