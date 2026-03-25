@@ -435,9 +435,9 @@ export default function Home() {
               {[
                 { Icon: FaPhone, label: "Call Our Office", value: "+91 76987 87886", href: "tel:+917698787886" },
                 { Icon: FaEnvelope, label: "Email Support", value: "balajienterprise.buz@gmail.com", href: "mailto:balajienterprise.buz@gmail.com" },
-                { Icon: FaMapMarkerAlt, label: "Main Office (Kamrej)", value: "Plot 185, Swarna Bhumi Soc., Kamrej, Surat — 394180", href: "#" },
+                { Icon: FaMapMarkerAlt, label: "Main Office (Kamrej)", value: "Plot 185, Swarna Bhumi Soc., Kamrej, Surat — 394180", href: "https://maps.google.com/?q=Plot+185,+Swarna+Bhumi+Soc.,+Kamrej,+Surat+-+394180" },
               ].map((c, i) => (
-                <a key={i} href={c.href} className="flex flex-col sm:flex-row items-center md:items-start gap-4 md:gap-8 group text-center md:text-left">
+                <a key={i} href={c.href} target={c.href.startsWith('http') ? "_blank" : undefined} className="flex flex-col sm:flex-row items-center md:items-start gap-4 md:gap-8 group text-center md:text-left">
                   <div className="w-12 h-12 md:w-16 md:h-16 bg-bg-alt flex items-center justify-center shrink-0 border border-slate-100 group-hover:bg-brand-primary transition-all">
                     <c.Icon className="w-5 h-5 md:w-6 md:h-6 text-brand-primary group-hover:text-white transition-colors" />
                   </div>
@@ -467,6 +467,53 @@ export default function Home() {
              >
                <FaWhatsapp className="w-5 h-5 md:w-6 md:h-6" /> WhatsApp Inquiry
              </a>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* ══ MAP SECTION (Find Us) ══ */}
+      <section className="pb-24 px-6 lg:px-20 bg-white">
+        <div className="max-w-7xl mx-auto">
+          <motion.div 
+            {...fadeUp}
+            className="rounded-[2.5rem] md:rounded-[4rem] overflow-hidden border-8 border-bg-alt shadow-2xl relative"
+          >
+            <div className="absolute top-8 left-8 z-10 hidden md:block">
+              <div className="bg-white/95 backdrop-blur-md px-6 py-5 rounded-3xl border border-slate-200 shadow-xl max-w-xs">
+                 <span className="font-mono text-[10px] uppercase tracking-widest text-brand-secondary font-bold block mb-2 text-center">Visit Our Center</span>
+                 <h4 className="text-brand-primary font-heading font-bold uppercase italic text-xl leading-tight mb-2 text-center">Balaji Enterprise</h4>
+                 <p className="text-xs text-text-muted font-sans leading-relaxed text-center">
+                   Plot 185, Swarna Bhumi Soc., Near NH-48, Kamrej, Surat — 394180.
+                 </p>
+                 <div className="flex flex-col gap-3 mt-4">
+                   <a 
+                     href="https://g.page/r/Cf-Slz_AT_vhEBM"
+                     target="_blank"
+                     className="block w-full text-center py-2.5 bg-brand-primary text-white text-[10px] font-black uppercase tracking-widest rounded-xl hover:bg-brand-secondary transition-all shadow-md"
+                   >
+                     Get Directions
+                   </a>
+                   <a 
+                     href="https://g.page/r/Cf-Slz_AT_vhEBM/review"
+                     target="_blank"
+                     className="block w-full text-center py-2 text-[10px] font-bold text-brand-primary uppercase tracking-widest border border-brand-primary/20 rounded-xl hover:bg-slate-50 transition-all italic"
+                   >
+                     Leave a Review ★★★★★
+                   </a>
+                 </div>
+              </div>
+            </div>
+            
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119042.871146603!2d72.9494!3d21.2721!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be05b0d00000001%3A0x0!2sBalaji%20Enterprise%20Kamrej!5e0!3m2!1sen!2sin!4v1711380000000!5m2!1sen!2sin" 
+              width="100%" 
+              height="600" 
+              style={{ border: 0 }} 
+              allowFullScreen 
+              loading="lazy" 
+              referrerPolicy="no-referrer-when-downgrade"
+              className="md:grayscale hover:grayscale-0 transition-all duration-1000"
+            />
           </motion.div>
         </div>
       </section>
