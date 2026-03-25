@@ -7,10 +7,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const routes = [
     '',
     '/categories',
-    '/#about',
-    '/#contact',
   ].map((route) => ({
-    url: `${baseUrl}${route}`,
+    url: `${baseUrl}${route}/`.replace(/\/+$/, '/'), // Ensure single trailing slash, but handle root
     lastModified: new Date(),
     changeFrequency: (route === '' ? 'daily' : 'weekly'),
     priority: route === '' ? 1.0 : 0.8,
@@ -18,7 +16,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
 
   const categoryRoutes = categories.map((category) => ({
-    url: `${baseUrl}/categories/${category.id}`,
+    url: `${baseUrl}/categories/${category.id}/`,
     lastModified: new Date(),
     changeFrequency: 'weekly' as const,
     priority: 0.7,
@@ -26,7 +24,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const productRoutes = categories.flatMap((category) =>
     category.products.map((product) => ({
-      url: `${baseUrl}/products/${product.id}`,
+      url: `${baseUrl}/products/${product.id}/`,
       lastModified: new Date(),
       changeFrequency: 'monthly' as const,
       priority: 0.6,
