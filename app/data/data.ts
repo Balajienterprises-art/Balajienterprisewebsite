@@ -1,12 +1,12 @@
 export const categories = [
   {
-    id: "pvc-tapes",
-    name: "PVC Insulation Tape",
+    id: "pvc-insulation-tape-surat",
+    name: "PVC Insulation Tape Supplier in Surat",
     image: "/products/steelgrip-pvc-tape-display.png",
     description: "Premium self-adhesive PVC electrical insulation tapes by Steelgrip+. Flame-retardant, weather-resistant, and high-adhesion tapes for professional wiring and industrial use.",
     products: [
       { 
-        id: "pvc-steelgrip", 
+        id: "steelgrip-pvc-insulation-tape-surat", 
         name: "Steelgrip+ PVC Insulation Tape (Single Roll)", 
         price: "Ask for Price", 
         images: [
@@ -20,7 +20,7 @@ export const categories = [
         applications: ["Wire Splicing", "Phase Identification", "Panel Wiring", "Cable Harnessing", "Moisture Sealing"]
       },
       { 
-        id: "pvc-box", 
+        id: "steelgrip-pvc-tape-wholesale-box-surat", 
         name: "Steelgrip+ PVC Tape Box (30 Rolls)", 
         price: "Ask for Price", 
         images: [
@@ -37,13 +37,13 @@ export const categories = [
     ]
   },
   {
-    id: "ht-tapes",
-    name: "HT Rubber (EPR) Tape",
+    id: "ht-rubber-tape-surat",
+    name: "HT Rubber Tape Supplier in Surat",
     image: "/product-images/ht-rubber-1.jpeg",
     description: "Ethylene Propylene Rubber tape for high-voltage cable insulation, joints, and splicing applications up to 69kV.",
     products: [
       { 
-        id: "ht-1", 
+        id: "ht-rubber-splicing-tape-19mm-surat", 
         name: "HT Rubber Splicing Tape (19mm x 9m)", 
         price: "Ask for Price", 
         images: [
@@ -60,13 +60,13 @@ export const categories = [
     ]
   },
   {
-    id: "bare-copper",
-    name: "Bare Copper Wire",
+    id: "bare-copper-wire-surat",
+    name: "Bare Copper Wire Supplier in Surat",
     image: "/product-images/bare-copper-1.jpeg",
     description: "Soft-drawn and hard-drawn bare copper conductors for earthing, bonding, and high-conductivity wiring applications.",
     products: [
       { 
-        id: "bc-1", 
+        id: "8-swg-bare-copper-wire-surat", 
         name: "Bare Copper Wire (8 SWG)", 
         price: "Ask for Price", 
         images: [
@@ -81,7 +81,7 @@ export const categories = [
         applications: ["Industrial Earthing", "Lightning Protection", "Transformer Bonding", "Heavy Current Grounding"]
       },
       { 
-        id: "bc-2", 
+        id: "10-swg-bare-copper-wire-surat", 
         name: "Bare Copper Wire (10 SWG)", 
         price: "Ask for Price", 
         images: [
@@ -98,13 +98,13 @@ export const categories = [
     ]
   },
   {
-    id: "enameled-wire",
-    name: "Super Enameled Wire",
+    id: "super-enameled-copper-wire-surat",
+    name: "Super Enameled Copper Wire in Surat",
     image: "/product-images/enameled-wire-1.jpg",
     description: "Class F & H enameled copper wire for motors, transformers, coils, and precision winding applications.",
     products: [
       { 
-        id: "sew-1", 
+        id: "18-swg-super-enameled-copper-wire-surat", 
         name: "Super Enameled Copper Wire (18 SWG)", 
         price: "Ask for Price", 
         images: [
@@ -121,13 +121,13 @@ export const categories = [
     ]
   },
   {
-    id: "brass-hardware",
-    name: "Brass Nut, Bolt & Washer",
+    id: "brass-hardware-manufacturer-surat",
+    name: "Brass Hardware & Fasteners in Surat",
     image: "/product-images/brass-1.jpeg",
     description: "Corrosion-resistant precision brass fasteners designed specifically for electrical panels, switchgear, and instrumentation.",
     products: [
       { 
-        id: "bh-1", 
+        id: "brass-hex-nut-bolt-supplier-surat", 
         name: "Brass Hex Nut & Bolt (M4 - M12)", 
         price: "Ask for Price", 
         images: [
@@ -144,13 +144,13 @@ export const categories = [
     ]
   },
   {
-    id: "custom",
-    name: "Custom Requirements",
+    id: "industrial-electrical-procurement-surat",
+    name: "Industrial Electrical Procurement in Surat",
     image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=600&auto=format&fit=crop&q=70",
     description: "We source other electrical & electronics items as per your specific requirement. Just share your specification with us.",
     products: [
       { 
-        id: "cus-1", 
+        id: "custom-electrical-procurement-surat", 
         name: "Custom Electrical Procurement", 
         price: "Ask for Quote", 
         images: [

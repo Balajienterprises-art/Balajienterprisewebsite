@@ -29,6 +29,9 @@ export async function generateMetadata({ params }: { params: Promise<{ product_i
   return {
     title: `${product.name} | Balaji Enterprise Surat`,
     description: product.description || `High-quality ${product.name} from Balaji Enterprise. Best prices in Surat, Gujarat.`,
+    alternates: {
+      canonical: `/products/${product_id}`,
+    },
     openGraph: {
       title: `${product.name} | Balaji Enterprise`,
       description: product.description || `Industrial grade ${product.name} supplier in Surat.`,
